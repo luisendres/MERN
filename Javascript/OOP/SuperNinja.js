@@ -7,6 +7,10 @@ class Ninja {
         this.strengh = 3;
     }
 
+    ninjaInfo(){
+        console.table([this.name, this.health, this.speed, this.strengh]);
+    }
+
     sayName() {
         console.log(this.name);
     }
@@ -44,6 +48,7 @@ class Sensei extends Ninja {
 // example output
 const superSensei = new Sensei("Master Splinter");
 superSensei.sayName();
+superSensei.ninjaInfo();
 superSensei.speakWisdom();
 // -> "What one programmer can do in one month, two programmers can do in two months."
 superSensei.showStats();
