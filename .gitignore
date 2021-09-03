@@ -47,3 +47,6 @@ Lecture/Week2/flashcards/src/index.js
 Lecture/Week2/flashcards/src/logo.svg
 Lecture/Week2/flashcards/src/reportWebVitals.js
 Lecture/Week2/flashcards/src/setupTests.js
+Lecture/Week2/flashcards/src/flashcards.json
+Lecture/Week2/flashcards/src/components/DisplayFormData.js
+Lecture/Week2/flashcards/src/components/FlashCard.js
