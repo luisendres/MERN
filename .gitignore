@@ -2507,3 +2507,8 @@ Express/faker-api/node_modules/vary/index.js
 Express/faker-api/node_modules/vary/LICENSE
 Express/faker-api/node_modules/vary/package.json
 Express/faker-api/node_modules/vary/README.md
+Lecture/Week2/HelloMongoose/server.js
+Lecture/Week2/HelloMongoose/server/config/mongoose.config.js
+Lecture/Week2/HelloMongoose/server/controllers/user.controller.js
+Lecture/Week2/HelloMongoose/server/models/user.model.js
+Lecture/Week2/HelloMongoose/server/routes/user.routes.js
