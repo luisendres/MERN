@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { Link, Redirect, Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 
 import NotFound from "./views/NotFound";
 import Products from "./views/Products";
@@ -11,21 +11,23 @@ import EditProduct from "./views/EditProduct";
 
 function App() {
   return (
-    <div className="App">
+    <div className="Container">
       <Switch>
+        <Redirect exact from="/" to="/products" />
         <Route exact path="/products">
+          <NewProduct />
           <Products />
         </Route>
+
+        {/* <Route exact path="products/new">
+          <NewProduct />
+        </Route> */}
 
         <Route exact path="/products/:id">
           <Product />
         </Route>
 
-        <Route exact path="products/new">
-          <NewProduct />
-        </Route>
-        
-        <Route exact path="products/:id/edit">
+        <Route exact path="/products/:id/edit">
           <EditProduct />
         </Route>
           
