@@ -8,7 +8,7 @@ module.exports = {
 
         // req.body is the form data or data sent in from postman / js requests.
         Player.create(req.body)
-        .then((Player) => {
+        .then((player) => {
             //newly created dest from DB with auto generate id and createdAt.
             res.json(player);
         })
@@ -21,8 +21,7 @@ module.exports = {
     getAll(req, res) {
         console.log("getAll method executed");
 
-        // Player.find()
-        Player.find().sort({name:1})
+        Player.find()
         .then((player) => {
             res.json(player);
         })
@@ -69,4 +68,17 @@ module.exports = {
             res.status(400).json(err);
         });
     }
+    // update(req, res) {
+    //     console.log("update method executed", "url params:", req.params);
+
+    //     Player.findByIdAndUpdate(req.params.id, {
+    //         new: true, //return newly updated document.
+    //     })
+    //     .then((player) => {
+    //         res.json(player);
+    //     })
+    //     .catch((err) => {
+    //         res.status(400).json(err);
+    //     });
+    // }
 }
